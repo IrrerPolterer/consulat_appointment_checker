@@ -3,6 +3,7 @@
 *.db
 *.csv
 *.ini
+*.jpg
 *.bin
 *.conf
 *.yml
