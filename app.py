@@ -16,13 +16,13 @@ driver = webdriver.Firefox()
 
 last_checked_month = None
 
-for year in range(2022, 2023):
-    for month in range(1, 12):
+for year in range(2022, 2024):
+    for month in range(1, 13):
 
         # load captcha page
         url = f"https://service2.diplo.de/rktermin/extern/appointment_showMonth.do?locationCode=amst&realmId=1113&categoryId=2662&dateStr=01.{str(month).zfill(2)}.{year}"
         driver.get(url)
-        sleep(2)
+        sleep(0.5)
 
         # check for captcha
         captchas = driver.find_elements(By.CSS_SELECTOR, "captcha div")
