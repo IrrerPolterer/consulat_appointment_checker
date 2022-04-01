@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from base64 import b64decode
+from captcha_solver import CaptchaSolver
 import re
 
 
