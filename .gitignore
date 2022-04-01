@@ -8,6 +8,7 @@
 *.conf
 *.yml
 *.json
+*.env
 *log/
 *config/
 *env/
