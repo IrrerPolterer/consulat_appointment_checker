@@ -7,7 +7,10 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 from os import environ
 from time import sleep
+from datetime import datetime
 import re
+
+print("\n⌚ "datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
 
 REMOTE_WEBDRIVER = environ["REMOTE_WEBDRIVER"]
 TWOCAPTCHA_API_KEY = environ["TWOCAPTCHA_API_KEY"]
